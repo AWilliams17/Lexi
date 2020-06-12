@@ -6,6 +6,11 @@ def cli():
     pass
 
 
+@cli.command(help="Returns information about this script.")
+def about():
+    click.echo(F"About:")
+
+
 @cli.command(help="Usage: 'lexi define {word}' ~ Looks up the definition for the passed word.")
 @click.argument(F"word")
 def define(word):

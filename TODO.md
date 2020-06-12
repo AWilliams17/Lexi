@@ -2,11 +2,12 @@
 ### Misc
 [ ] requirements.txt  
 [ ] README.md  
+[ ] Colored printing  
 [ ] Unit tests
 ### Main
-[ ] Help command  
+[x] Help command(built in to Click apparently)  
 [ ] About command  
 [ ] Define command  
 [ ] Anto command  
 [ ] Syn command  
-[ ] Tense command  
+[ ] Tense command 
