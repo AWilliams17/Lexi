@@ -1,4 +1,5 @@
 import click
+from words.word import Word
 
 
 @click.group()
@@ -14,7 +15,14 @@ def about():
 @cli.command(help="Usage: 'words define {word}' ~ Looks up the definition for the passed word.")
 @click.argument(F"word")
 def define(word):
-    click.echo(F"definition of {word}: ")
+    word_inst = Word(word)
+    click.echo(F"Definition of {word}:")
+    click.echo("-Noun-")
+    for i in word_inst.definitions['noun']:
+        click.echo(F"{word_inst.definitions['noun'].index(i)}: {i}")
+    click.echo("-Verb-")
+    for i in word_inst.definitions['verb']:
+        click.echo(F"{word_inst.definitions['verb'].index(i)}: {i}")
 
 
 @cli.command(help="Usage: 'words anto {word}' ~ List antonyms for the passed word.")

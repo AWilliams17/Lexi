@@ -3,7 +3,8 @@
 [ ] requirements.txt  
 [ ] README.md  
 [ ] Colored printing  
-[ ] Unit tests
+[ ] Unit tests  
+[ ] nltk download handled automatically
 ### Main
 [x] Help command(built in to Click apparently)  
 [ ] About command  
