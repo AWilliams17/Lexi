@@ -12,7 +12,7 @@ def about():
     click.echo(F"About:")
 
 
-@cli.command(help="Usage: 'words define {word}' ~ Looks up the definition for the passed word.")
+@cli.command(help="Usage: 'define {word}' ~ Looks up the definition for the passed word.")
 @click.argument(F"word")
 def define(word):
     word_inst = Word(word)
@@ -25,25 +25,28 @@ def define(word):
         click.echo(F"{word_inst.definitions['verb'].index(i)}: {i}")
 
 
-@cli.command(help="Usage: 'words anto {word}' ~ List antonyms for the passed word.")
+@cli.command(help="Usage: 'anto {word}' ~ List antonyms for the passed word.")
 @click.argument(F"word")
 def anto(word):
-    click.echo("antonym of {word}: ")
+    word_inst = Word(word)
+    click.echo(F"antonyms of {word}: ")
 
 
-@cli.command(help="Usage: 'words syn {word}' ~ List synonyms for the passed word.")
+@cli.command(help="Usage: 'syn {word}' ~ List synonyms for the passed word.")
 @click.argument(F"word")
 def syn(word):
-    click.echo(F"synonym of {word}: ")
+    word_inst = Word(word)
+    click.echo(F"synonyms of {word}: ")
 
 
-@cli.command(help="Usage: 'words tense {word}' ~ List present, future, and past tenses for the passed word.")
+@cli.command(help="Usage: 'examples {word}' ~ List examples of the word in a sentence.")
 @click.argument("word")
-def tense(word):
-    click.echo(F"tense of {word}: ")
+def examples(word):
+    word_inst = Word(word)
+    click.echo(F"examples of {word} in a sentence: ")
 
 
-@cli.command(help="Usage: 'words lexicon {word}' ~ Outputs all information on the word.")
+@cli.command(help="Usage: 'lexicon {word}' ~ Outputs all information on the word.")
 @click.argument("word")
 def lex(word):
     click.echo(F"lexicon of {word}: ")
