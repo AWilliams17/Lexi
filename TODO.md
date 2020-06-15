@@ -13,5 +13,6 @@
 [x] Syn command  
 [ ] Examples command
 [x] Rhyme command
-[ ] Lexicon command
 [ ] Refactor
+[ ] Lexicon command
+[ ] Error handling

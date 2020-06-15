@@ -48,11 +48,13 @@ def syn(word):
 def examples(word):
     word_inst = Word(word)
     click.echo(F"examples of {word} in a sentence: ")
+    for i in word_inst.examples:
+        click.echo(F"{word_inst.examples.index(i)+1}: {i}")
 
 
 @cli.command(help="Usage: 'lexicon {word}' ~ Outputs all information on the word.")
 @click.argument("word")
-def lex(word):
+def lexicon(word):
     word_inst = Word(word)
     click.echo(F"lexicon of {word}: ")
     click.echo(word_inst)

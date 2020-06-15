@@ -12,7 +12,7 @@ class Word:
         self.rhymes = rhymes(self.word)  # list of rhymes
 
     def __repr__(self):
-        pass
+        return F"etc"
 
     def _get_definitions(self):
         definitions = {"noun": [], "verb": []}
@@ -41,5 +41,8 @@ class Word:
 
     def _get_examples(self):
         examples = []
-
+        for synset in self._synsets:
+            syn_examples = synset.examples()
+            if syn_examples:
+                examples.append(synset.examples()[0])
         return examples
