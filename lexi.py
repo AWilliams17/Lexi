@@ -63,6 +63,8 @@ def lex(word):
 def rhyme(word):
     word_inst = Word(word)
     click.echo(F"rhymes of {word}: ")
+    for i in word_inst.rhymes:
+        click.echo(F"{word_inst.rhymes.index(i)+1}: {i}")
 
 
 if __name__ == '__main__':
