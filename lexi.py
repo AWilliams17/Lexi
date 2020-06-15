@@ -58,5 +58,12 @@ def lex(word):
     click.echo(word_inst)
 
 
+@cli.command(help="Usage: 'rhyme {word}' ~ Outputs all words which rhyme with the passed word")
+@click.argument("word")
+def rhyme(word):
+    word_inst = Word(word)
+    click.echo(F"rhymes of {word}: ")
+
+
 if __name__ == '__main__':
     cli()

@@ -1,6 +1,7 @@
 from typing import Dict, List, Any
 
 from nltk.corpus import wordnet
+from pronouncing import rhymes
 
 
 class Word:
@@ -10,6 +11,7 @@ class Word:
         self.definitions = self._get_definitions()  # dictionary with format: { 'noun': [], 'verb': [] }
         self.meanings = self._get_meanings()  # dictionary with format: { 'antonyms': [], 'synonyms': [] }
         self.examples = self._get_examples()  # list of examples
+        self.rhymes = None
 
     def __repr__(self):
         pass
@@ -43,3 +45,6 @@ class Word:
         examples = []
 
         return examples
+
+    def _get_rhymes(self):
+        pass

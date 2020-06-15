@@ -11,5 +11,7 @@
 [x] Define command  
 [x] Anto command  
 [x] Syn command  
-[ ] Examples
+[ ] Examples command
+[ ] Rhyme command
+[ ] Lexicon command
 [ ] Refactor
