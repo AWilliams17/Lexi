@@ -8,7 +8,8 @@
 ### Main
 [x] Help command(built in to Click apparently)  
 [ ] About command  
-[ ] Define command  
-[ ] Anto command  
-[ ] Syn command  
-[ ] Tense command 
+[x] Define command  
+[x] Anto command  
+[x] Syn command  
+[ ] Examples
+[ ] Refactor
