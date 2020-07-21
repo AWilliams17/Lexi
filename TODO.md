@@ -1,6 +1,6 @@
 # Lexi
 ### Misc
-[ ] requirements.txt  
+[x] requirements.txt  
 [ ] README.md  
 [ ] Colored printing  
 [ ] Unit tests  
@@ -11,8 +11,8 @@
 [x] Define command  
 [x] Anto command  
 [x] Syn command  
-[ ] Examples command
-[x] Rhyme command
-[ ] Refactor
-[ ] Lexicon command
+[x] Examples command  
+[x] Rhyme command  
+[ ] Refactor  
+[ ] Lexicon command(Output all information on the given word)  
 [ ] Error handling
