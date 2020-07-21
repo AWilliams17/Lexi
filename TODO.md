@@ -15,4 +15,5 @@
 [x] Rhyme command  
 [ ] Refactor  
 [ ] Lexicon command(Output all information on the given word)  
-[ ] Error handling
+[ ] Error handling  
+[ ] Option to limit results
