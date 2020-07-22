@@ -55,14 +55,6 @@ def examples(word):
         click.echo(F"{word_inst.examples.index(i)+1}: {i}")
 
 
-@cli.command(help="Usage: 'lexicon {word}' ~ Outputs all information on the word.")
-@click.argument("word")
-def lexicon(word):
-    word_inst = Word(word)
-    click.echo(F"lexicon of {word}: ")
-    click.echo(word_inst)
-
-
 @cli.command(help="Usage: 'rhyme {word}' ~ Outputs all words which rhyme with the passed word")
 @click.argument("word")
 def rhyme(word):

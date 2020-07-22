@@ -14,6 +14,5 @@
 [x] Examples command  
 [x] Rhyme command  
 [ ] Refactor  
-[ ] Lexicon command(Output all information on the given word)  
 [ ] Error handling  
 [ ] Option to limit results

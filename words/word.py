@@ -11,9 +11,6 @@ class Word:
         self.examples = self._get_examples()  # list of examples
         self.rhymes = rhymes(self.word)  # list of rhymes
 
-    def __repr__(self):
-        return F"etc"
-
     def _get_definitions(self):
         definitions = {"noun": [], "verb": []}
         for synset in self._synsets:
