@@ -12,7 +12,6 @@ def about():
     click.echo(F"About:")
     click.echo("Github: github.com/awilliams17/Lexi")
     click.echo("To report a problem, file an issue in the repo.")
-    click.echo("Contact: awilliams17412@gmail.com")
 
 
 @cli.command(help="Usage: 'define {word}' ~ Looks up the definition for the passed word.")
