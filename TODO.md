@@ -13,6 +13,7 @@
 [x] Syn command  
 [x] Examples command  
 [x] Rhyme command  
+[ ] Tense command(s)
 [ ] Refactor  
 [ ] Error handling  
 [ ] Option to limit results

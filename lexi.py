@@ -7,14 +7,14 @@ def cli():
     pass
 
 
-@cli.command(help="Returns information about this script.")
+@cli.command(short_help="Returns information about this script.")
 def about():
     click.echo(F"About:")
     click.echo("Github: github.com/awilliams17/Lexi")
     click.echo("To report a problem, file an issue in the repo.")
 
 
-@cli.command(help="Usage: 'define {word}' ~ Looks up the definition for the passed word.")
+@cli.command(short_help="Usage: 'define {word}' ~ Looks up definitions for the word.")
 @click.argument(F"word")
 def define(word):
     word_inst = Word(word)
@@ -27,7 +27,7 @@ def define(word):
         click.echo(F"{word_inst.definitions['verb'].index(i)+1}: {i}")
 
 
-@cli.command(help="Usage: 'anto {word}' ~ List antonyms for the passed word.")
+@cli.command(short_help="Usage: 'anto {word}' ~ Lists antonyms for the word.")
 @click.argument(F"word")
 def anto(word):
     word_inst = Word(word)
@@ -36,7 +36,7 @@ def anto(word):
         click.echo(F"{word_inst.meanings['antonyms'].index(i)+1}: {i}")
 
 
-@cli.command(help="Usage: 'syn {word}' ~ List synonyms for the passed word.")
+@cli.command(short_help="Usage: 'syn {word}' ~ Lists synonyms for the word.")
 @click.argument(F"word")
 def syn(word):
     word_inst = Word(word)
@@ -45,7 +45,7 @@ def syn(word):
         click.echo(F"{word_inst.meanings['synonyms'].index(i)+1}: {i}")
 
 
-@cli.command(help="Usage: 'examples {word}' ~ List examples of the word in a sentence.")
+@cli.command(short_help="Usage: 'examples {word}' ~ Lists examples of the word in a sentence.")
 @click.argument("word")
 def examples(word):
     word_inst = Word(word)
@@ -54,7 +54,7 @@ def examples(word):
         click.echo(F"{word_inst.examples.index(i)+1}: {i}")
 
 
-@cli.command(help="Usage: 'rhyme {word}' ~ Outputs all words which rhyme with the passed word")
+@cli.command(short_help="Usage: 'rhyme {word}' ~ Outputs all words which rhyme with the word")
 @click.argument("word")
 def rhyme(word):
     word_inst = Word(word)
