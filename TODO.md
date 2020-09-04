@@ -1,7 +1,7 @@
 # Lexi
 ### Misc
 [x] requirements.txt  
-[ ] README.md  
+[x] README.md  
 [ ] Colored printing  
 [ ] Unit tests(?)  
 [ ] nltk download handled automatically
